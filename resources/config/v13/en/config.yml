@@ -386,7 +386,35 @@ cauldron:
     color: '66e0ff' # lighter aqua
     cookParticles:
       - '00ccff/5'
-
+      
+  burbon_base:
+    name: Fermented grain
+    ingredients:
+      - pumpkin_seeds
+      - sugar
+    color: 'd69a18' 
+    cookParticles:
+      - '00ccff/8'
+      
+  cognac_base:
+    name: Fermented berries
+    ingredients:
+      - glow_berries
+      - sweet_berries
+    color: 'c95508'
+    cookParticles:
+      - '00ccff/5'
+  
+  champagne_base:
+    name: White wine
+    ingredients:
+      - glowstone_dust
+      - sweet_berries
+      - sugar
+    color: 'ffe74d' 
+    cookParticles:
+      - '00ccff/5'
+  
   eggnog_base:
     name: Smooth egg mixture
     ingredients:
@@ -531,6 +559,59 @@ recipes:
       - '+ &8Corked'
       - '++ &8Mellow'
       - '+++ &8Full-Bodied'
+      
+  champagne:
+    name: Brut Champagne/Champagne/&eDoux Champagne
+    ingredients:
+      - Sweet_Berries/5
+      - Glowstone_dust/2
+      - Sugar/4
+    cookingtime: 7
+    distillruns: 0
+    wood: 0
+    age: 10
+    color: 'fad6a5'
+    difficulty: 3
+    alcohol: 7
+    lore:
+      - '+ &8Harsh'
+      - '+ &8Corked'
+      - '++ &8Mellow'
+      - '+++ &8Full-Bodied'
+    effects:
+      - ABSORPTION/1/3-10
+      
+  cognac:
+    name: '&4Cognac'
+    ingredients:
+      - Sweet_Berries/5
+      - Glow_Berries/5
+    cookingtime: 8
+    distillruns: 2
+    wood: 2
+    age: 8
+    color: '834333'
+    difficulty: 3
+    alcohol: 11
+    lore: '&6Warms from the inside'
+    effects:
+      - PROTECTION/1/5-13
+    
+  bourbon:
+    name: Bourbon
+    ingredients:
+      - Pumpkin_Seeds/6
+      - Sugar/2
+    cookingtime: 12
+    distillruns: 1
+    wood: 2
+    age: 2
+    color: 'a94007'
+    difficulty: 5
+    alcohol: 14
+    lore:
+      - +Sugary Bourbon
+      - +++ Good Bourbon
 
   mead:
     name: Awkward Mead/Mead/&6Golden Mead
